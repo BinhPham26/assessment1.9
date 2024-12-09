@@ -1,0 +1,256 @@
+body {
+  margin: 100px 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* CSS cho header tiêu đề */
+.header h1 {
+  font-size: 450%;
+  color: #0e2452;
+  margin: 0;
+  width: 100%;
+}
+.title {
+  width: 70%;
+  padding: 0;
+}
+
+.personal1-1 {
+  font-weight: bold;
+  width: 30%;
+}
+.personal2-2 {
+  width: 70%;
+}
+.personal1-1,
+.personal2-2 {
+  margin: 5px 0;
+  font-size: 150%;
+}
+.logo {
+  height: 260px;
+}
+/* section */
+.section {
+  padding: 20px 0;
+}
+/* Mục tiêu nghề nghiệp */
+.objective {
+  font-size: 200%;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding: 10px 0;
+  border-bottom: 3px solid black;
+  margin-top: 50px;
+}
+.obj-content {
+  padding: 30px 0 20px 0;
+  font-size: 130%;
+  font-weight: bold;
+}
+/* Học vấn */
+.learning-table {
+  padding: 10px 0;
+  font-size: 130%;
+}
+.table2-2 {
+  line-height: 35px;
+}
+.table1-1,
+.table2-2 {
+  padding: 10px 0px 20px 0px;
+  border-bottom: groove;
+}
+.skill .table1-1 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.like ul {
+  margin-top: -10px;
+}
+.like li {
+  margin: 6px 0;
+}
+.project li,
+.project p {
+  font-size: 130%;
+}
+.project p {
+  margin-bottom: 15px;
+}
+.project h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 150%;
+  margin-top: 10px;
+}
+ul {
+  padding-left: 30px;
+}
+.contact-img {
+  height: 50px;
+  margin: 20px 0;
+}
+.contact-img img {
+  margin-right: 10px;
+}
+figure {
+  padding: 10px 10px 20px 10px;
+  border-radius: 15px;
+  text-align: center;
+  margin: 20px 10px;
+}
+figure img {
+  border-radius: 13px;
+  width: 100%;
+}
+.fb,
+.git {
+  max-width: 150px;
+}
+.git {
+  min-width: 105px;
+}
+figure:hover {
+  box-shadow: 0px 0px 10px black;
+  transform: scale(1.05);
+}
+a {
+  font-weight: normal;
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  body {
+  }
+  .header > .con {
+    flex-direction: row-reverse;
+    gap: 30px;
+    font-size: 70%;
+  }
+  .contact1-1 figure {
+    width: 20%;
+  }
+}
+@media (max-width: 480px) {
+  .header > .con {
+    flex-direction: column-reverse;
+  }
+  .title {
+    width: 100%;
+    font-size: 80%;
+  }
+  .personal1-1 {
+    width: 30%;
+  }
+  .personal2-2 {
+    width: 70%;
+  }
+  .objective {
+    font-size: 150%;
+    letter-spacing: 3px;
+  }
+  .obj-content {
+    font-size: 110%;
+  }
+  .table1,
+  .table2,
+  .table3 {
+    font-size: 70%;
+  }
+  .learning-table .table1,
+  .learning-table .table2,
+  .learning-table .table3 {
+    grid-template-columns: 40% 60%;
+  }
+  .table2-2 {
+    margin-top: -8px;
+  }
+  .list li {
+    line-height: 25px;
+  }
+  .project .contact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact1-1 figure {
+    width: 244%;
+  }
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* Dùng chung */
+.con {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+  overflow: auto;
+  height: 100%;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fir {
+  align-items: flex-start;
+}
+.end {
+  align-items: flex-end;
+}
+.lef {
+  justify-content: flex-start;
+}
+.rig {
+  justify-content: flex-end;
+}
+.he {
+  height: 100%;
+}
+.w {
+  width: 100%;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.col {
+  flex-direction: column;
+}
+.ro {
+  flex-direction: row;
+}
+.rel {
+  position: relative;
+}
+.vis {
+  overflow: visible;
+}
+.grid {
+  display: grid;
+}
+.g2 {
+  grid-template-columns: 50% 50%;
+}
+.gap20 {
+  gap: 20px;
+}
+.space-2 {
+  justify-content: space-between;
+}
+.g3-7 {
+  grid-template-columns: 30% 70%;
+}
+.g2-8 {
+  grid-template-columns: 20% 80%;
+}
+.g25-75 {
+  grid-template-columns: 25% 75%;
+}
